@@ -97,7 +97,16 @@ Cfilt fault_detect 0 1p
 
 .ends fault_gate
 ```
-![Fault detection module](images/fault.png)
+
+This module checks wether the Vref value given to the comparator is within the range of 7v to 9v. If yes then pass it to the resistor ladder, if no then it wont pass it to the ladder instead it will raise an error flag.
+![Fault detection module](images/fault.jpg)
 ![Assembeled ADC](images/adc.jpg)
 ![Assembeled ADC with the fault tolerant block](images/final.jpg)
 
+
+I would like to thank my teamates
+- Rohan Madanu
+- Pranav Madanu
+- Rizwan
+
+for helping me complete the project.
