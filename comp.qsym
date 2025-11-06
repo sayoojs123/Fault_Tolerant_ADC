@@ -1,0 +1,16 @@
+ÿØÿÛ«symbol comp
+  «type: X»
+  «description: Machine generated symbol for COMPARATOR»
+  «library file: C:\Users\SAYOOJ\Documents\QSPICE\MyLibrary\MyLibrary.lib»
+  «shorted pins: false»
+  «line (-600,-100) (-600,550) 0 0 0x1000000 -1 -1»
+  «line (-600,550) (300,200) 0 0 0x1000000 -1 -1»
+  «line (300,200) (-600,-100) 0 0 0x1000000 -1 -1»
+  «text (-50,250) 1 0 0 0x1000000 -1 -1 "X1"»
+  «text (0,-350) 1 0 0 0x1000000 -1 -1 "COMPARATOR"»
+  «text (50,-500) 1 15 0 0x0 -1 -1 "Vhigh=1"»
+  «text (50,-650) 1 0 0 0x0 -1 -1 "Vlow=0"»
+  «pin (-600,100) (20,0) 1 7 0 0x0 -1 "in+"»
+  «pin (-600,400) (210,10) 1 11 0 0x0 -1 "in-"»
+  «pin (300,200) (0,80) 1 15 0 0x0 -1 "out"»
+»

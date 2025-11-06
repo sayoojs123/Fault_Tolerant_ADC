@@ -1,0 +1,12 @@
+ÿØÿÛ«symbol comp_fault_block
+  «type: X»
+  «description: Machine generated symbol for FAULT_GATE»
+  «library file: |.subckt fault_gate vin vout_to_comparators error_flag\nBfault_detect fault_detect 0 V = (V(vin) > 7) && (V(vin) < 9) ? 0 : 1\nBerror error_flag 0 V = V(fault_detect) > 0.5 ? 1 : 0\nBgate vout_to_comparators 0 V = V(fault_detect) > 0.5 ? 0 : V(vin)\nRfilt fault_detect 0 1k\nCfilt fault_detect 0 1p\n.ends fault_gate»
+  «shorted pins: false»
+  «rect (-3100,-700) (3100,100) 0 0 0 0xff0000 0x4000000 -1 0 -1»
+  «text (0,-100) 1 0 0 0x1000000 -1 -1 "X1"»
+  «text (0,-300) 1 0 0 0x1000000 -1 -1 "FAULT_GATE"»
+  «pin (-3100,-300) (20,0) 1 7 0 0x0 -1 "vin"»
+  «pin (3100,-300) (-20,0) 1 11 0 0x0 -1 "vout_to_comparators"»
+  «pin (0,-700) (0,0) 1 14 0 0x0 -1 "error_flag"»
+»

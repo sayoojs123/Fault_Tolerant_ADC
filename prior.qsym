@@ -1,0 +1,20 @@
+ÿØÿÛ«symbol
+  «type: X»
+  «description: Machine generated symbol for PRIORITY_ENCODER»
+  «library file: |.subckt priority_encoder in7 in6 in5 in4 in3 in2 in1 in0 out2 out1 out0\n.param Vhigh=1.0 Vlow=0\nEout2 out2 0 VALUE = { IF(V(in7)>0.5, Vhigh, IF(V(in6)>0.5, Vhigh, IF(V(in5)>0.5, Vhigh, IF(V(in4)>0.5, Vhigh, Vlow)))) }\nEout1 out1 0 VALUE = { IF(V(in7)>0.5, Vhigh, IF(V(in6)>0.5, Vhigh, IF(V(in5)>0.5, Vlow, IF(V(in4)>0.5, Vlow, IF(V(in3)>0.5, Vhigh, IF(V(in2)>0.5, Vhigh, Vlow)))))) }\nEout0 out0 0 VALUE = { IF(V(in7)>0.5, Vhigh, IF(V(in6)>0.5, Vlow, IF(V(in5)>0.5, Vhigh, IF(V(in4)>0.5, Vlow, IF(V(in3)>0.5, Vhigh, IF(V(in2)>0.5, Vlow, IF(V(in1)>0.5, Vhigh, IF(V(in0)>0.5, Vlow, Vlow)))))))) }\nRin7 in7 0 1Meg\nRin6 in6 0 1Meg\nRin5 in5 0 1Meg\nRin4 in4 0 1Meg\nRin3 in3 0 1Meg\nRin2 in2 0 1Meg\nRin1 in1 0 1Meg\nRin0 in0 0 1Meg\nRout2 out2 0 1k\nRout1 out1 0 1k\nRout0 out0 0 1k\n.ends priority_encoder»
+  «shorted pins: false»
+  «rect (-2200,-1200) (200,1200) 0 0 0 0xff0000 0x4000000 -1 0 -1»
+  «text (-1000,400) 1 15 0 0x1000000 -1 -1 "X1"»
+  «text (-1000,-400) 1 15 0 0x1000000 -1 -1 "PRIORITY_ENCODER"»
+  «pin (-2200,1100) (20,0) 1 7 0 0x0 -1 "in7"»
+  «pin (-2200,800) (20,0) 1 7 0 0x0 -1 "in6"»
+  «pin (-2200,500) (20,0) 1 7 0 0x0 -1 "in5"»
+  «pin (-2200,200) (20,0) 1 7 0 0x0 -1 "in4"»
+  «pin (-2200,-100) (20,0) 1 7 0 0x0 -1 "in3"»
+  «pin (-2200,-400) (20,0) 1 7 0 0x0 -1 "in2"»
+  «pin (-2200,-700) (250,10) 1 11 0 0x0 -1 "in1"»
+  «pin (-2200,-1000) (260,10) 1 11 0 0x0 -1 "in0"»
+  «pin (200,500) (-20,0) 1 11 0 0x0 -1 "out2"»
+  «pin (200,0) (-20,0) 1 11 0 0x0 -1 "out1"»
+  «pin (200,-400) (-20,0) 1 11 0 0x0 -1 "out0"»
+»
