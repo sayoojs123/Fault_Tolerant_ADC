@@ -1,6 +1,7 @@
 # Fault_Tolerant_ADC
 
 This projects aim to build a fault tolerant block for edge IOT device 
+This project was built using QSPICE
 
 ## Comparator
 ```
@@ -11,6 +12,8 @@ Rin+ in+ 0 10Meg
 Rin- in- 0 10Meg
 .ends comparator
 ```
+![Comparator](images/comp.jpg)
+
 
 ## Priority encoder
 ```
@@ -69,8 +72,9 @@ Rout1 out1 0 1k
 Rout0 out0 0 1k
 
 .ends priority_encoder
-
 ```
+![Priority encoder](images/prior.jpg)
+
 
 ## Fault detection module
 ```
@@ -93,3 +97,7 @@ Cfilt fault_detect 0 1p
 
 .ends fault_gate
 ```
+![Fault detection module](images/fault.png)
+![Assembeled ADC](images/adc.jpg)
+![Assembeled ADC with the fault tolerant block](images/final.jpg)
+
